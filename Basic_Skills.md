@@ -175,4 +175,10 @@ TCP/IP Model:
 4. Application Layer(include session, presentation, and application layers).
 
 
+3. BASIC TERMIMAL USAGE
+
+cd, ls, echo Hi > file.txt, cat, less, nano, vim, pwd, touch, cp -R, mv, man, info, history, which, whereis
+mkdir, rmdir, rm, gzip, bzip, tar, top, netstat, ps, systemctl start(stop, status) services, grep, ln, chmod, chown, find, du -h, df -h,   
+CTRL+L(clear),CTRL+A(begin of text), CTRL+E(end of text).  
+
 
