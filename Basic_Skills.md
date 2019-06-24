@@ -57,8 +57,10 @@ Work with Github(pull request, fork)!!!
 pull request - we can accept all changes that we done in our local repo or decline(this changes accept the main developer)
 fork - this is copy of that project what we fork
 In root directory of our project we need create readme.md(we must descrpipt our project)
-connect to remote repo with ssh(keygens)
+connect to remote repo with ssh(keygens).
 
+
+2. WORK WITH HTTP PROTOCOL
 
 Network for junior
 HTTP - hypertext transfer protocol(protocol without saving state, without connection establish).
@@ -181,4 +183,70 @@ cd, ls, echo Hi > file.txt, cat, less, nano, vim, pwd, touch, cp -R, mv, man, in
 mkdir, rmdir, rm, gzip, bzip, tar, top, netstat, ps, systemctl start(stop, status) services, grep, ln, chmod, chown, find, du -h, df -h,   
 CTRL+L(clear),CTRL+A(begin of text), CTRL+E(end of text).  
 
+4. WORK WITH TASKTRAKERS
 
+ToDoList for Windows is the best solution.
+
+5. WORK WITH TIMETRACKERS
+
+Toggl the best solution
+
+6. Most basic data structures and algirythms.
+
+In PHP we have SPL(Standart PHP Library) where we have structures, iterators, exceptions and functions for work with many
+structures of data without including external libraries.
+Structure of data - this is a programm unit, that can save and proceed many data of the same type or who have logical connections.
+
+Some basic structures:
+List(односвязный, двусвязный)
+Tree(binary tree, heap, nested sets)
+
+Односвязный список - состоит из узлов, каждый из которых содержит данные, так и/или ссылки на следующий и предыдущий узлы.
+Двухзвязный список - в каждом узле даного списка есть ссылки на предыдущий и последующий узел. Удобно передвигаться в любом направлении,
+просто удаление и перестановка елементов. Основа для стэка и очереди.Все операции имеют низкую алгоритмическую сложность.
+
+СТЭК - абстрактный тип данных, органнизованный по принципу LIFO(last in first out).Последним зашел - первым вышел. Как в стакане, или рожок автомата.
+Очередь - абстрактный тип данных, органнизованный по принципу FIFO(first in first out).
+Куча - деревовидная структура(граф)б каждый узел больше или равен своим потомкам.
+
+$stack = new SplStack(); - create object of stack
+
+$stack->push('1');
+$stack->push('2');
+$stack->push('3');
+
+И если извлечь, то первым выйдет 3.
+
+$queue = new SplQueue();
+$queue->enqeue('one'); - поставить в очередь
+$queue->enqeue('two');
+$queue->enqeue('three');
+
+SplHeap - abstract class for Heap, but we have two childs SplMaxHeap(range by max), SplMinHeap(range by min).insert(), extract() - operations for heap.
+SplPriorityQueue - queue with priority.
+
+Array in SPL
+In Zend Engine array is a HashTable with pointers to (first value, last value, current value, array of references, containers for references).
+
+In PHP SPL we have classic massive(numerical massive with fixed number of elements, work fast than simple array).
+When we work with foreach we create a copy of array and than proceed every element.
+When we work with iterators we don`t create a copy, we work with this massive.
+
+Итератор - это интерфейс, предоставляющий доступ к элементам коллекции(массива или контейнера) и навигацию по ним.
+
+Обход директорий например лучше сделать итератором
+
+$dir = new DirectoryIterator("/dir");
+
+foreach( $dir as $item) {
+	echo $item . '<br />';
+}
+
+Можно посмотреть список интерфейсов, родительских классов, трейтов, кол-во элементов, spl_autoload - это все прелести SPL.
+
+7. Basic configuration and work with PHPStorm.
+
+- run PHPStorm
+- install theme;
+- install font for workspace;
+- hide all toolbars(view - uncheck all);
